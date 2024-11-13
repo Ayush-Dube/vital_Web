@@ -5,3 +5,22 @@ Repository for webProjects using  html Css Js and few other libraries  for bette
 - responsive 
 - skip framework 
 - simple markup
+
+- `g-t-c`
+- `g-t-r`
+- use of `auto`
+- use of percentage `50% 25% 25% `
+- instead use fr unit `1fr 1fr`
+- fr vs percentage 
+                
+        
+      
+
+
+
+-  Key Differences
+   |Feature|Percentages (50% 25% 25%)|	Fractional Units (2fr 1fr 1fr)|
+   |---|---|---|
+   |Space Distribution|Fixed, based on container width|Proportional, fills available space|
+   |Responsiveness|Less flexible|More responsive|
+   |Ideal for Content Layout|Fixed layouts|	Fluid, flexible layouts|

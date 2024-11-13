@@ -6,39 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>moreGrids</title>
     <style>
-        body{
-            background-color: rgb(252, 251, 191);
+        body {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-        .container{
-            display: grid;
-            /* justify-content: center; */
-            justify-items: center;
-            align-items: center;
-            grid-template-columns: auto;
-            grid-template-rows: repeat(6 , 1fr);
-            gap: 5px;
 
-            .item{
+        .container {
+            background-color: whitesmoke;
+            display: grid;
+            width: 95vw;
+            height: 60vh;
+            margin: 0 auto;
+            outline: 8px solid #4834d4;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: ;
+            /* gap: 5px; */
+            
+
+
+
+            .item {
                 border: 1px solid red;
+                border : 1px solid #222;
+                text-align: center;
+                box-shadow: 1px 2px 3px grey;
+                border-radius: 8px;
+                color: #222;
+                font-size: 2em;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f9d423;
+                align-content: center;
 
             }
-            
-        }
 
+            .item:hover{
+                color: beige;
+                cursor: pointer;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <h1 align="center">CSS GRID</h1>
     <div class="container">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
+        <div class="item one">one🚀</div>
+        <div class="item two ">2🦅</div>
+        <div class="item three">3🐎</div>
+        <div class="item four">4🐋</div>
+        <div class="item five">5🐯</div>
+        <div class="item six">6🦍</div>
 
     </div>
 </body>
