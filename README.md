@@ -24,3 +24,9 @@ Repository for webProjects using  html Css Js and few other libraries  for bette
    |Space Distribution|Fixed, based on container width|Proportional, fills available space|
    |Responsiveness|Less flexible|More responsive|
    |Ideal for Content Layout|Fixed layouts|	Fluid, flexible layouts|
+
+- `fr` is way better 
+- problems faced
+   - targetting class
+   - naming of box individually
+   - media query syntax
