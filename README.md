@@ -28,5 +28,7 @@ Repository for webProjects using  html Css Js and few other libraries  for bette
 - `fr` is way better 
 - problems faced
    - targetting class
-   - naming of box individually
+   - naming of box individually and exclusively
    - media query syntax
+
+   
