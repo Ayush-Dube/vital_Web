@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    height: 100vh;
+    scroll-snap-type:y mandatory;
+    overflow-y: scroll;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    /* scroll-snap-stop: always; */
+
+    div{
+        font-size: 65px;
+        letter-spacing: 0.45rem;
+        font-weight: bolder;
+        color: rgb(68, 254, 223);
+    }
+}
+
+main > section:nth-child(odd){
+    background-color: #674cff;
+}
