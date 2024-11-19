@@ -31,4 +31,7 @@ Repository for webProjects using  html Css Js and few other libraries  for bette
    - naming of box individually and exclusively
    - media query syntax
 
+### snapCSS
+- use `sections`
+- use `scroll-snap-type: y/both mandatory ` in html or body tag with height `100vh`
    

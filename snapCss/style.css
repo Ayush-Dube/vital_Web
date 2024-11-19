@@ -1,29 +1,49 @@
-*{
+* {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
-main{
-    height: 100vh;
-    scroll-snap-type:y mandatory;
-    overflow-y: scroll;
+html {
+
+    scroll-snap-type: both mandatory;
+    scroll-padding: 60px;
 }
-section{
+
+main {
+    /* height: 100vh; */
+    
+
+    background-color: rgb(251, 222, 182);
+}
+
+section {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
-    /* scroll-snap-stop: always; */
+    scroll-snap-stop: always;
 
-    div{
-        font-size: 65px;
-        letter-spacing: 0.45rem;
+    div {
+        font-size: 5vh;
+        letter-spacing: .5vh;
         font-weight: bolder;
-        color: rgb(68, 254, 223);
+        color: rgb(2, 231, 193);
     }
 }
 
-main > section:nth-child(odd){
+main>section:nth-child(odd) {
     background-color: #674cff;
+}
+
+nav {
+    height: 60px;
+    background-color: #77ff82;
+    text-align: center;
+    padding: 15px;
+    font-size: 3vw;
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+
 }
