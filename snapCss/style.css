@@ -5,7 +5,7 @@
 }
 html {
 
-    scroll-snap-type: both mandatory;
+    scroll-snap-type:y mandatory;
     scroll-padding: 60px;
 }
 
@@ -14,6 +14,7 @@ main {
     
 
     background-color: rgb(251, 222, 182);
+    
 }
 
 section {
@@ -38,12 +39,28 @@ main>section:nth-child(odd) {
 
 nav {
     height: 60px;
-    background-color: #77ff82;
+    background-color: #f3f17e;
     text-align: center;
-    padding: 15px;
+    padding: 13.8px;
     font-size: 3vw;
     overflow: hidden;
     position: fixed;
     width: 100vw;
 
+}
+
+
+.top-btn{
+    height: 30px;
+    width: 30px;
+    background-color: #246634;
+    color: aliceblue;
+    text-align: center;
+    border: solid rgb(57, 48, 48) 3px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: +1;
+    display: block;
+    bottom: 20px;
+    right: 20px;
 }

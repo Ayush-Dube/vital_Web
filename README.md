@@ -34,4 +34,5 @@ Repository for webProjects using  html Css Js and few other libraries  for bette
 ### snapCSS
 - use `sections`
 - use `scroll-snap-type: y/both mandatory ` in html or body tag with height `100vh`
+- on child ,use `scroll-snap-align:start`
    
