@@ -62,6 +62,11 @@ body {
 
 .item.box1 {
     grid-area: box1;
+    background-image: url(./pic2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 
 .item.box2 {
@@ -73,6 +78,7 @@ body {
     background: url(./pic3.jpg);
     background-position: center;
     background-size: cover;
+    
 
 }
 
