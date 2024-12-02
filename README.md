@@ -32,7 +32,8 @@ Repository for webProjects using  html Css Js and few other libraries  for bette
 - on child ,use `scroll-snap-align:start`  
 
 ### more grid 27nov
--
+- grid- auto- rows: 350px is solutin for having a card 350px tall everytime
+- use it with grid-template-col: repeat(autofit,minmax(300px,1fr))
 
 
 

@@ -1,99 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            
         }
-        .container{
+
+        .container {
             min-height: 100vh;
             width: 95vw;
-            background-color: #0dada5;
+            background:linear-gradient(45deg, rgb(124, 255, 224),rgb(196, 50, 207));
             padding: 9px;
             display: grid;
-            gap:.5rem;
-            /* grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); */
-            grid-template-columns: 100px minmax(90px,1fr) 100px;
-            /* grid-template-rows:repeat(auto-fit,350px); */
-            grid-template-rows:repeat(auto-fit,150px);
+            gap: .5rem;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            /* grid-template-columns: 100px minmax(90px,1fr) 100px; */
+
+            /* grid-template-rows: repeat(auto-fit, 1fr); */
+            /* grid-template-rows: repeat(auto-fit, minmax(150px,1fr)); */
+            /* grid-template-rows: repeat(auto-fit, 350px); */
+            grid-auto-rows: 250px;
         }
-        .card{
+
+        .card {
             height: 100%;
-            width:100%;
+            width: 100%;
             border: 2px solid black;
             background-color: #ffffa9e5;
             border-radius: 7px;
             /* otherwise text will spill */
-            
-         
-            
-            
+            overflow: hidden;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="card box1">
             <h1>card1</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus! Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos, cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus alias incidunt at sed expedita error?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, nam
+                debitis, vitae quas asperiores ratione voluptatem, dolorum facilis sit consequuntur voluptates nisi eos
+                expedita doloremque soluta. Asperiores corrupti atque aperiam mollitia aliquid velit quibusdam
+                laudantium harum ratione, incidunt maxime autem odit temporibus magni unde, rerum quae doloribus culpa
+                id placeat.</p>
         </div>
         <div class="card box2">
             <h1>card2</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus! Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos, cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus alias incidunt at sed expedita error?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error?</p>
         </div>
         <div class="card box3">
             <h1>card3</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus! Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos, cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus alias incidunt at sed expedita error?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error?</p>
         </div>
         <div class="card box4">
             <h1>card4</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus! Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos, cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus alias incidunt at sed expedita error?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error?</p>
         </div>
         <div class="card box5">
             <h1>card5</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus! Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos, cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus alias incidunt at sed expedita error?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error?</p>
         </div>
         <div class="card box6">
             <h1>card6</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus! Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos, cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus alias incidunt at sed expedita error?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error?</p>
         </div>
         <div class="card box7">
             <h1>card7</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus! Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos, cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus alias incidunt at sed expedita error?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error?</p>
         </div>
         <div class="card box8">
             <h1>card8</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus! Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos, cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus alias incidunt at sed expedita error?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque ratione optio distinctio similique, aperiam modi assumenda quidem facere ad nobis explicabo. Officia, architecto soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad minima tempora cupiditate, totam incidunt quam rem, alias numquam quaerat, in et? Iusto ea illo quos mollitia praesentium repudiandae consequuntur non placeat reiciendis at fuga quisquam animi, voluptates a incidunt ex modi. Cupiditate, earum quia aliquid consequatur corrupti ipsa ipsam? </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
+                ratione optio distinctio similique, aperiam modi assumenda quidem facere ad nobis explicabo. Officia,
+                architecto soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad minima tempora
+                cupiditate, totam incidunt quam rem, alias numquam quaerat, in et? Iusto ea illo quos mollitia
+                praesentium repudiandae consequuntur non placeat reiciendis at fuga quisquam animi, voluptates a
+                incidunt ex modi. Cupiditate, earum quia aliquid consequatur corrupti ipsa ipsam? </p>
         </div>
         <div class="card box9">
             <h1>card9</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus! Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos, cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus alias incidunt at sed expedita error?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error?</p>
         </div>
         <div class="card box10">
             <h1>card10</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus! Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos, cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus alias incidunt at sed expedita error?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error?</p>
         </div>
         <div class="card box11">
             <h1>card11</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus! Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos, cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus alias incidunt at sed expedita error?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error?</p>
         </div>
         <div class="card box12">
             <h1>card12</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus! Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos, cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
             </p>
         </div>
-    </div>   
-    
+
+        <div class="card box13">
+            <h1>card13</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box14">
+            <h1>card14</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box15">
+            <h1>card15</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box16">
+            <h1>card16</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box17">
+            <h1>card17</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box18">
+            <h1>card18</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box19">
+            <h1>card19</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box20">
+            <h1>card20</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box21">
+            <h1>card21</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box22">
+            <h1>card22</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box23">
+            <h1>card23</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box24">
+            <h1>card24</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box25">
+            <h1>card25</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box26">
+            <h1>card26</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box27">
+            <h1>card27</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box28">
+            <h1>card28</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box29">
+            <h1>card29</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box30">
+            <h1>card30</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box31">
+            <h1>card31</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box32">
+            <h1>card32</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box33">
+            <h1>card33</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box34">
+            <h1>card34</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box35">
+            <h1>card35</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+        <div class="card box36">
+            <h1>card36</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque sit tempore iure facere delectus!
+                Repudiandae officia quam nemo sint sunt id aut tenetur explicabo amet laudantium blanditiis placeat eos,
+                cupiditate aspernatur? Mollitia maxime ad nam iusto debitis officia rerum ipsam quo ipsa. Corrupti minus
+                alias incidunt at sed expedita error? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis, excepturi qui impedit incidunt architecto at quam libero quas adipisci reprehenderit.
+            </p>
+        </div>
+
+
+    </div>
+
 </body>
+
 </html>
