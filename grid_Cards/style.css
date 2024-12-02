@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: radial-gradient(rgb(192, 198, 154),rgb(6, 60, 126));
+    min-height: 100vh;
+    
+}
+
+.container{
+    padding: 10px;
+    
+    width: 98vw;
+    display: grid;
+    gap:9px;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-auto-rows: 500px;
+}
+
+.card{
+    background: linear-gradient(rgba(211, 211, 211, 0.774),rgba(37, 175, 255, 0.316));
+    border-radius: 7px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .animal-info{
+        text-align: center;
+    }
+    .animal-img{
+        height: 250px;
+        border-radius: 90%;
+        overflow: hidden;
+
+
+        img{
+            height: 100%;
+            
+        }
+    }
+
+}
