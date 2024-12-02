@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auto(fill vs fit)</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: aliceblue;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* i was not able to align the container items to the center , i used these above 4 lines and got it to the center */
+            background:radial-gradient(rgb(73, 58, 58), rgb(33, 33, 117));
+        }
+        .container{
+            /* min-height: 100vh; */
+            width: 100vw;
+            padding: 1rem;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            /* grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); */
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-auto-rows: 150px;
+        }
+        .cards{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(255, 162, 95, 0.705);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards card1">box-1</div>
+        <div class="cards card2">box-2</div>
+        <div class="cards card3">box-3</div>
+        <div class="cards card4">box-4</div>
+        <div class="cards card5">box-5</div>
+        <div class="cards card6">box-6</div>
+        <div class="cards card7">box-7</div>
+        <div class="cards card8">box-8</div>
+    </div>
+    
+</body>
+</html>
