@@ -3,25 +3,33 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background: radial-gradient(rgb(192, 198, 154),rgb(6, 60, 126));
+
+body {
+    /* background: radial-gradient(rgb(187, 186, 160),rgb(177, 67, 251)); */
+    background-color: black;
     min-height: 100vh;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* on mobile screen alignment problem was fixed with above lines */
+
 }
 
-.container{
+.container {
     padding: 10px;
-    
+    /* border: 3pdx solid red; */
+
     width: 98vw;
     display: grid;
-    gap:9px;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-    grid-auto-rows: 500px;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 450px;
 }
 
-.card{
-    background: linear-gradient(rgba(211, 211, 211, 0.774),rgba(37, 175, 255, 0.316));
-    border-radius: 7px;
+.card {
+    background: linear-gradient(rgba(211, 211, 211, 0.774), rgba(32, 28, 39, 0.882));
+    border-radius: 11px;
     height: 100%;
     width: 100%;
     border: 2px solid black;
@@ -29,20 +37,39 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5px;
+    gap: 7px;
 
-    .animal-info{
+
+    .animal-info {
         text-align: center;
+        background: linear-gradient(rgba(228, 231, 253, 0.871), rgba(205, 200, 248, 0.822));
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        border-radius: 11px;
+
+        p {
+            color: rgb(5, 5, 33);
+            text-wrap: wrap;
+            text-align: justify;
+            padding: 8px;
+        }
+
     }
-    .animal-img{
+
+    .animal-img {
         height: 250px;
         border-radius: 90%;
         overflow: hidden;
 
 
-        img{
+        img {
             height: 100%;
-            
+
         }
     }
+
+
 
 }
