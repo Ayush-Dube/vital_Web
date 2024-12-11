@@ -88,6 +88,7 @@ body {
 
 .item.box5 {
     grid-area: box5;
+    border: 2px solid red;
 }
 
 .item.box6 {
